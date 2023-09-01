@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-dceu
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/bootstrap/rhtap-demo-sgxg-tenant/e2e-python-personal/devfile-sample-python-basic-dceu@sha256:265a70032e29d95c513661daf61631924d15c3792be33f81040aa86b3e2a1d2b
+        name: my-python
+        resources: {}
+status: {}
